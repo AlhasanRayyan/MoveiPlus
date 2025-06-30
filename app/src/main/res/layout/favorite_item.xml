@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/movie_item_corner"
+    android:id="@+id/movie_item"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:paddingTop="8dp"
+    android:layout_marginEnd="8dp"
+    >
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fav_movie_img"
+            android:layout_width="200dp"
+            android:scaleType="centerCrop"
+            android:layout_height="230dp"
+            style="@style/circleShape"
+            app:srcCompat="@drawable/extraction_3_movie" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_favorite"
+            app:tint="@color/main"
+            android:layout_gravity="bottom|end"
+            app:shapeAppearanceOverlay="@style/circleShape"
+            android:background="@color/white"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            />
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Movie name"
+        android:id="@+id/fav_movie_name"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <RatingBar
+        android:id="@+id/fav_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:theme="@style/RatingBar"
+
+        />
+</LinearLayout>

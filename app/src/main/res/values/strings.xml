@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="japan">🇯🇵</string>
+    <string name="usa">🇺🇲</string>
+    <string name="korea">🇰🇷</string>
+    <string name="lurem">lorem asd gg sa ssa dhfew ioerwep sdxmcd xsd cysd sg df fddg , sdadsadd,sadasdsadsadsd sadasdasdsdadasdsadasdsad sadsd sdsd sd asdsa dasdadsad sadsadsa sadsad sdasd adssad sd asd asd sad sa sa das dsa dsadsadasdsadsadsadsadsadsadsadsadsadsadsadasdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaddgggggggggggggggggggggggggggggggggggggggggggggggg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/extraction2"
+    android:backgroundTint="#CFFFFFFF"
+    android:backgroundTintMode="screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/dt_scroll"
+        android:layout_height="match_parent"
+        android:background="@drawable/extraction2"
+        android:backgroundTint="#CFFFFFFF"
+        android:backgroundTintMode="screen">
+
+    <RelativeLayout
+        android:id="@+id/dt_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dt_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/dt_img"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/extraction2" />
+        </androidx.cardview.widget.CardView>
+
+        <RatingBar
+            android:id="@+id/dt_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_card"
+            android:isIndicator="true"
+            android:rating="2.5"
+            android:theme="@style/RatingBar" />
+
+        <ImageView
+            android:id="@+id/dt_favorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="fav_icon"
+            app:srcCompat ="@drawable/ic_favorite"
+            android:layout_below="@id/dt_card"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="8dp"
+            app:tint="@color/grey"
+            android:layout_alignParentEnd="true"
+            />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_rating"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Name:"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/dt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_rating"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/name"
+            android:text="Movie Name"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Release:"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/dt_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/release"
+            android:text="26/3/2025"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_release"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Duration:"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/dt_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_release"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/duration"
+            android:text="02:30:00"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_duration"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Category:"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/dt_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_duration"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/category"
+            android:maxLines="3"
+            android:text="Action | War"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_category"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Country:"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/dt_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_category"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/country"
+            android:maxLines="3"
+            android:text="USA"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold|italic" />
+
+
+        <TextView
+            android:id="@+id/story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dt_country"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="About:"
+            android:textSize="26sp" />
+
+
+        <TextView
+            android:id="@+id/dt_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/story"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/lurem"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
